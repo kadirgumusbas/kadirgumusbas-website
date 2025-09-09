@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Tek tip görsel dil ---------- */
+@layer components {
+  /* Başlıklarda gradient vurgu */
+  .highlight {
+    @apply bg-gradient-to-r from-brand-600 to-accent-500 bg-clip-text text-transparent;
+  }
+
+  .highlightReverse {
+    @apply bg-gradient-to-r from-accent-500 to-brand-500 bg-clip-text text-transparent;
+  }
+
+  /* Cam-vari kart yüzeyi (light/dark uyumlu) */
+  .card {
+    @apply rounded-2xl p-6 bg-slate-100/70 ring-1 ring-slate-200
+           dark:bg-white/5 dark:ring-white/10 shadow-sm;
+  }
+
+  .section-heading {
+    @apply text-2xl md:text-3xl font-bold tracking-tight;
+  }
+
+  /* Link alt çizgi efekti */
+  .nav-link {
+    @apply text-sm font-medium opacity-80 hover:opacity-100 relative;
+  }
+  .nav-link::after {
+    content:"";
+    @apply absolute -bottom-2 left-0 h-0.5 w-0 bg-brand-600 transition-all duration-200;
+  }
+  .nav-link:hover::after { @apply w-full; }
+
+  /* Chip */
+  .chip {
+    @apply text-xs px-2 py-1 rounded-full bg-white/70 ring-1 ring-slate-200
+           dark:bg-white/10 dark:ring-white/10;
+  }
+
+  /* Gradient buton (CTA) */
+  .btn-gradient {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-xl text-white
+           bg-gradient-to-r from-brand-600 to-accent-600 hover:opacity-90;
+  }
+}
+
+/* Caret animasyonu (hero) */
+@layer utilities {
+  @keyframes blink { 0%,50%{opacity:1} 50.01%,100%{opacity:0} }
+  .animate-blink { animation: blink 1s step-start infinite; }
+}
