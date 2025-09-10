@@ -37,11 +37,11 @@
 
       <!-- Mobil panel -->
       <div v-if="open" class="md:hidden pt-3">
-        <ul class="flex flex-col gap-2 border-t border-black/5 dark:border-white/10 pt-3">
-          <li><RouterLink to="/" class="nav-link" @click="open=false">Ana Sayfa</RouterLink></li>
-          <li><RouterLink to="/about" class="nav-link" @click="open=false">Hakkımda</RouterLink></li>
-          <li><RouterLink to="/projects" class="nav-link" @click="open=false">Projeler</RouterLink></li>
-          <li><RouterLink to="/skills" class="nav-link" @click="open=false">Yetenekler</RouterLink></li>
+        <ul class="flex flex-col gap-2 border-t border-black/5 dark:border-white/10 pt-3 bg-white">
+          <li><a href="" class="nav-link" @click="open=false">Ana Sayfa</a></li>
+          <li><a href="#hakkimda" class="nav-link" @click="open=false">Hakkımda</a></li>
+          <li><a href="#deneyimler" class="nav-link" @click="open=false">Deneyimler</a></li>
+          <li><a href="#projeler" class="nav-link" @click="open=false">Projeler</a></li>
           <li>
             <a href="/abdulkadirGumusbas.pdf" download
                class="mt-1 inline-flex w-fit px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-500">
