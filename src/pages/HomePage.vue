@@ -223,7 +223,7 @@ const education = ref([
           <div class="lg:col-span-2 space-y-6">
             <p class="text-lg text-gray-700 dark:text-gray-300">
               Bolu Abant İzzet Baysal Üniversitesi Bilgisayar Mühendisliğinden yeni mezun oldum.
-              8 aydır N2Mobil'de gönüllü staj yapmaktayım.
+              6 aydır N2Mobil'de gönüllü staj yapmaktayım.
               Django + Vue ekosisteminde harita tabanlı uygulamalar, CRM panelleri ve
               veri odaklı arayüzler geliştiriyorum. Hedefim: sade, performanslı ve
               sürdürülebilir ürün deneyimleri.
@@ -502,3 +502,4 @@ const education = ref([
   animation: shimmer 8s linear infinite;
 }
 </style>
+
